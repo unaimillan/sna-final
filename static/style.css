@@ -20,37 +20,37 @@ html, body, .grid-container { height: 100%; margin: 0; }
 }
 
 #img1 {
-  background-image: url('https://i.imgur.com/RSP6rxS.png');
+  background-image: url('/static/1.png');
 }
 
 #img2 {
-  background-image: url('https://i.imgur.com/UpoL7Kj.png');
+  background-image: url('/static/2.png');
 }
 
 #img3 {
-  background-image: url('https://i.imgur.com/gMDk0jT.png');
+  background-image: url('/static/3.png');
 }
 
 #img4 {
-  background-image: url('https://i.imgur.com/dgP4bR7.jpeg');
+  background-image: url('/static/4.png');
 }
 
 #img5 {
-  background-image: url('https://i.imgur.com/wzEqVlv.png');
+  background-image: url('/static/5.png');
 }
 
 #img6 {
-  background-image: url('https://i.imgur.com/AbQH9Ma.png');
+  background-image: url('/static/6.png');
 }
 
 #img7 {
-  background-image: url('https://i.imgur.com/GjkpEQt.png');
+  background-image: url('/static/7.png');
 }
 
 #img8 {
-  background-image: url('https://i.imgur.com/X8MCGGI.png');
+  background-image: url('/static/8.png');
 }
 
 #img9 {
-  background-image: url('https://i.imgur.com/xRUx7wX.png');
+  background-image: url('/static/9.png');
 }
