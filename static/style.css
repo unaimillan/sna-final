@@ -1,0 +1,56 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+}
+
+.grid-text {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  background-repeat:   no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#img1 {
+  background-image: url('https://i.imgur.com/RSP6rxS.png');
+}
+
+#img2 {
+  background-image: url('https://i.imgur.com/UpoL7Kj.png');
+}
+
+#img3 {
+  background-image: url('https://i.imgur.com/gMDk0jT.png');
+}
+
+#img4 {
+  background-image: url('https://i.imgur.com/dgP4bR7.jpeg');
+}
+
+#img5 {
+  background-image: url('https://i.imgur.com/wzEqVlv.png');
+}
+
+#img6 {
+  background-image: url('https://i.imgur.com/AbQH9Ma.png');
+}
+
+#img7 {
+  background-image: url('https://i.imgur.com/GjkpEQt.png');
+}
+
+#img8 {
+  background-image: url('https://i.imgur.com/X8MCGGI.png');
+}
+
+#img9 {
+  background-image: url('https://i.imgur.com/xRUx7wX.png');
+}
