@@ -4,7 +4,7 @@ from flask import Flask, render_template
 from redis import Redis
 
 app = Flask(__name__)
-redis = Redis(host="10.0.10.14", port=6379)
+redis = Redis(host="10.0.0.14", port=6379, socket_connect_timeout=30)
 
 
 @app.route("/")
