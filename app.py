@@ -4,7 +4,8 @@ from flask import Flask, render_template
 from redis import Redis
 
 app = Flask(__name__)
-redis = Redis(host="localhost", port=6379)
+redis = Redis(host="10.0.10.14", port=6379)
+
 
 @app.route("/")
 @app.route("/index")
