@@ -1,4 +1,4 @@
-Pipeline {
+pipeline {
   agent any
   stages{
     stage("build"){
@@ -9,6 +9,7 @@ Pipeline {
     stage("test"){
       steps {
         echo "test test"
+        sh 'python test.py'
       }
     }
     stage("deploy"){
