@@ -9,7 +9,8 @@ class WebappTest(unittest.TestCase):
         self.counter_value = redis.get('counter')
 
     def tearDown(self):
-        redis.set('counter', self.counter_value)
+        if self.counter_value is not None:
+            redis.set('counter', self.counter_value)
 
     def test_simple(self):
         self.assertEqual(2 + 2, 4)
