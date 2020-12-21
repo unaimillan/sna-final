@@ -15,7 +15,18 @@ pipeline {
     }
     stage("deploy"){
       steps {
-        echo "test test"
+        echo "test deploy"
+        sh 'ssh-keyscan -t rsa 10.0.0.12 >> ~/.ssh/known_hosts'
+        sshagent(['1703f27e-4edd-453a-8f8a-978db4dfe12a']) {
+            sh 'scp deploy.sh ubuntu@10.0.0.12:~'
+            sh 'ssh ubuntu@10.0.0.12 "sh deploy.sh"'
+        }
+        sh 'ssh-keyscan -t rsa 10.0.0.13 >> ~/.ssh/known_hosts'
+        sshagent(['1703f27e-4edd-453a-8f8a-978db4dfe12a']) {
+            sh 'scp deploy.sh ubuntu@10.0.0.13:~'
+            sh 'ssh ubuntu@10.0.0.13 "sh deploy.sh"'
+        }
+        
       }
     }
   }
